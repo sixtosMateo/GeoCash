@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Credit Cards</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<div class= "cardcontainers">
+
+  <!-- this will be erase data will be inserted dynamically -->
+  <ion-card>
+
+      <ion-card-content>
+        <h2>Credit card:</h2>
+        0123456789
+
+       <h3> Limit:</h3>
+        300
+
+        <h3>Available:</h3>
+        100
+      </ion-card-content>
+
+    </ion-card>
+
+</div>
+
+  <div class= "cardcontainers">
+        <ion-card *ngFor="let detail of cardDetails">
+          <ion-card-content>
+            <h2>Credit card:</h2>
+            {{detail.displayCardNumber}}
+
+            <h3> Card type:</h3>
+            {{detail.subCardType}}
+
+            <h3> Limit:</h3>
+            {{detail.currentCreditLimitAmount}}
+
+            <h3>Available:</h3>
+            {{detail.maximumPermanentCreditLimitAmount}} 404 (BUG on CITI Api)
+          </ion-card-content>
+        </ion-card>
+
+  </div>
+
+<!-- need to create an action that would add another credit card in the database -->
+<!-- this will send you to another page to add info -->
+<button id="addcardbutton" (click)="doSomething()" ion-button large>+</button>
+
+  </ion-content>

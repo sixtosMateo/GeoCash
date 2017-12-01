@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add credit card</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+
+          <ion-item>
+            <ion-label >Account Name:</ion-label>
+            <ion-input type="text" value=""></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label >Provider:</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label >Limit:</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label >Already spent:</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-list>
+        <p>        </p>
+        <p>        </p>
+
+
+          <!-- send data to the database -->
+          <!-- take you to the credit card section as soon as you submit -->
+          <button id="addcreditcard" (click)= "doSomething()" ion-button large>Add</button>
+
+          <!-- take you to the credit card page without saving no data -->
+          <button id="cancelcreditcard" (click)= "doSomething()" ion-button large>Cancel</button>
+
+
+  </ion-content>
+

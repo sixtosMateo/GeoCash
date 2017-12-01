@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add bill</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+
+          <ion-item>
+            <ion-label >Bill Name:</ion-label>
+            <ion-input type="text" value=""></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label >Amount owe:</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label >date of the month due:</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-list>
+        <p>        </p>
+        <p>        </p>
+        <ion-list radio-group>
+            <ion-list-header>
+             <h1>Type of bill</h1>
+            </ion-list-header>
+
+            <ion-item>
+              <ion-label>Consistent:</ion-label>
+              <ion-radio checked="true" value="Consistent"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Inconsistent:</ion-label>
+              <ion-radio value="Inconsistent">></ion-radio>
+            </ion-item>
+
+
+          </ion-list>
+
+          <!-- send data to the database -->
+          <!-- take you to the bill section as soon as you submit -->
+          <button id="addBill" (click)="doSomething()" ion-button large>Add</button>
+          <button id="cancelBill" (click)="doSomething()" ion-button large>Cancel</button>
+
+  </ion-content>
+

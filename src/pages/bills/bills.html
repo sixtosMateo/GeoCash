@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bills</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class= "cardcontainers">
+
+    <!-- this will be erase data will be inserted dynamically -->
+    <ion-card>
+
+        <ion-card-content>
+          <h2>Bill Name:</h2>
+         Rent
+        <p> " "</p>
+         <h3> Date</h3>
+          9/16/17 Monday
+         <p>" "</p>
+
+          <h3>amount payment:</h3>
+          $1,200
+        </ion-card-content>
+
+      </ion-card>
+
+  </div>
+
+  <div class= "cardcontainers">
+
+    <!-- this will be erase data will be inserted dynamically -->
+    <ion-card>
+
+        <ion-card-content>
+          <h2>Bill Name:</h2>
+        Wifi
+        <p> " "</p>
+         <h3> Date</h3>
+          9/1/17 wednesday
+         <p>" "</p>
+
+          <h3>amount payment:</h3>
+          $67.99
+        </ion-card-content>
+
+      </ion-card>
+
+  </div>
+  <button ion-button large (click)="addBill()">+</button>
+
+  </ion-content>
